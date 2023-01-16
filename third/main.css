@@ -1,0 +1,222 @@
+
+body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    padding: 0;
+    background-color: #111111;
+    font-family: 'Inter', sans-serif;
+} 
+a{
+    text-decoration: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: #dffbff;
+}
+ul{
+    list-style:none;
+}
+.nav-ul{
+    display: flex;
+   
+}
+.nav-item{
+    margin: 5px;
+    font-size:18px;
+  
+}
+.container-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.nav-title{
+    gap: 0.5rem;
+    display: flex;
+color: #dffbff;
+
+}
+
+.btn-nav{
+    width: 14%;
+    height: 43px;
+    background: none;
+    color: #dffbff;
+    font-size: 15px;
+    border: #dffbff solid;
+
+}
+.btn{
+    cursor: pointer;
+}
+.body-1{
+   padding-top: 5em;
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.img-body-1{
+    width: 533px;
+    height: 364px;
+    float: left;
+    border-radius: 25px 25px 25px 25px;
+}
+.article-title{
+
+    color: #dffbff;
+    width: 60%;
+    font-size: 42px;
+}
+.article-p{
+    color: 
+    #4f4b48;
+    
+    width: 70%;
+}
+.buttonIn{
+    width: 300px;
+    position: relative;
+}
+.inputEmail {
+    padding-left: 58px !important;
+    background: #4f4b48;
+    margin: 0px;
+    padding: 0px;
+    width: 101%;
+    outline: none;
+    border: none;
+    height: 47px;
+    border-radius: 21px;
+
+}
+.btn-send-article {
+    position: absolute;
+    border-radius: 20px;
+    /* right: -68px; */
+    left: 84%;
+    z-index: 2;
+    font-size: 15px;
+    border: none;
+    top: 4px;
+    width: 102px;
+    height: 39px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #e4b749;
+    transform: translateX(2px);
+}
+.fa-envelope{
+    position: absolute;
+    top: 12px;
+    left: 26px;
+}
+.container-body-2{
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.body-2-title{
+    font-size: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    color: #dffbff;
+}
+.container-card{
+    padding-top: 3rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    border: white solid;
+    border-radius: 20px;
+    width: 306px;
+    padding: 31px;
+    gap: 1rem;
+    gap: 1rem;
+}
+.card:hover{
+
+    color:#e4b749 ;
+   border: #e4b749 solid;
+}
+.img-card{
+    background-color: white;
+    border-radius: 50%;
+    width: 87px;
+    height: 81px;
+}
+.card-header-rate{
+    color: white;
+}
+.card-body-p{
+    color: #4f4b48;
+}
+.card-body{
+    padding-bottom: 2rem;
+}
+.btn-card{
+    position: absolute; 
+    border-radius: 20px;
+    
+   
+    font-size: 15px;
+    border: none;
+    width: 102px;
+    height: 39px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #e4b749;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+}
+.details-faq{
+    color: white;
+    border-radius: 11px;
+    margin: 0;
+    padding: 14px;
+    border: #e4b749 solid 1px;
+}
+.footer-title{
+    padding-top: 2rem;
+    text-align: center;
+    color: #dffbff;
+}
+.footer-container{
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+.inputNameFooter{
+    padding: 10px;
+    width: 275px;
+    border-radius: 11px 0px 0px 11px;
+}
+.inputEmailFooter{
+    padding: 10px;
+    width: 275px;
+    border-radius: 0px 0px 0px 0px;
+
+}
+.btn-footer-send{
+    padding: 10px;
+    width: 76px;
+    border-radius: 0px 12px 12px 0px;
+    background: #e4b749;
+}
