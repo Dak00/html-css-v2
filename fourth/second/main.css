@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
 body{
     position: absolute;
     left: 0;
@@ -7,7 +10,7 @@ body{
     bottom: 0;
     margin: auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Epilogue', sans-serif;
 }
 .btn{
     cursor: pointer;
@@ -37,7 +40,7 @@ ul{
 }
 .art-b-1{
     width: 46%;
-    padding: 11%;
+    padding: 8%;
 }
 .nav-link-h{
     color: white;
@@ -87,7 +90,7 @@ header img{
         font-weight: 100;
 }
 .btn-b-1{
-    width: 24%;
+    width: 30%;
     border-radius: 50px;
-    padding: 2%;
+    padding: 3%;
 }
