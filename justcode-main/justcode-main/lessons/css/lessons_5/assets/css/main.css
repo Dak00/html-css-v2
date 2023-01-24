@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+button {
+	cursor: pointer;
+	border: 0;
+}
+
+.image--background {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.font--playfair {
+	font-family: "Playfair Display", sans-serif;
+}
+
+.landing__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 970px;
+	color: white;
+	padding: 25px 120px;
+	background-image: url("../../assets/img/background.png");
+}
+
+.landing__wrapper header {
+	display: flex;
+	font-size: 15px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.landing__wrapper nav {
+	display: flex;
+	gap: 40px
+}
+
+.landing__wrapper h1 {
+	margin-top: auto;
+	font-size: 70px
+}
+
+.landing__wrapper p {
+	margin: 50px 0 70px;
+	font-size: 25px;
+}
+
+.landing__wrapper button {
+	margin-bottom: 265px;
+	background-color: #3cdcff;
+	color: black;
+	padding: 25px 65px;
+	font-size: 20px;
+	border-radius: 38px;
+	font-weight: 600;
+}
+
+.card__wrapper {
+	padding: 160px 265px;
+	display: flex;
+	gap: 100px;
+	align-items: center;
+}
+
+.card__image {
+	position: relative;
+}
+
+.card__image span {
+	position: absolute;
+	left: 60px;
+	color: white;
+}
+
+
+.card__image span:first-of-type {
+	top: 30px;
+
+}
+
+.card__image span:last-of-type {
+	bottom: 30px
+}
+
+.card__description h1 {
+	font-size: 42px;
+}
+
+.card__description p {
+	margin: 30px 0 50px;
+	font-size: 18px;
+}
+
+.card__description button {
+	font-weight: 600;
+	font-size: 20px;
+	padding: 25px 65px;
+	border: 1px solid #3cdcff;
+	border-radius: 38px;
+	color: #49deff;
+	background: transparent;
+}
+
+.form__wrapper {
+	background-image: url("../../assets/img/form.png");
+	height: 518px;
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.form__description {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-left: auto;
+}
+
+.form__description h1 {
+	width: 367px;
+	font-size: 42px;
+}
+
+.form__description p {
+	font-size: 18px;
+	width: 195px;
+}
+
+.form__wrapper form {
+	display: flex;
+	flex-direction: column;
+	margin-right: 380px;
+	width: 400px;
+}
+
+.form__wrapper form button {
+	margin: 25px 0 10px;
+	padding: 20px 40px;
+	border-radius: 38px;
+	font-size: 20px;
+	background-color: #3cdcff;
+}
+
+.form__wrapper form input {
+	padding: 20px 30px;
+	border-radius: 38px;
+	border: 2px solid #9CB7CA;
+}
+
+.form__wrapper form input:first-of-type {
+	margin-bottom: 20px;
+}
+
+.form__wrapper form p {
+	text-align: center;
+}
+
+.form__wrapper form p a {
+	color: #007792;
+}
+
+.card__wrapper:last-of-type {
+	flex-direction: row-reverse;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	background: #F1F2F6;
+	padding: 70px 125px;
+}
+
+footer nav:first-of-type {
+	display: flex;
+	margin-left: 120px;
+	gap: 100px
+}
+
+footer nav:first-of-type a {
+	font-size: 14px;
+}
+
+
+footer nav:first-of-type a:first-of-type {
+	width: 180px;
+}
+
+footer nav:first-of-type a:last-of-type {
+	width: 200px;
+}
+
+footer nav:last-of-type {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	margin-left: auto;
+}
+

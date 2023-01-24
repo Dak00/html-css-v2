@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+			:root {
+				--text-primary: #0a093d;
+				--secondary: #217bf4;
+				--font-primary: 'Inter', sans-serif;
+				--font-secondary: 'Poppins', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.container {
+				width: 100%;
+				background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
+				margin: 0 auto;
+				padding: 25px calc((100% - 1200px) / 2);
+			}
+
+			button {
+				border: 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			header {
+				display: flex;
+				align-items: center;
+				font-family: var(--font-primary);
+			}
+			nav {
+				display: flex;
+				gap: 32px;
+				color: #656464;
+				margin: 0 380px 0 72px;
+			}
+
+			.dropdown {
+				position: relative;
+			}
+
+			.dropdown__content {
+				display: none;
+				position: absolute;
+			}
+
+			.dropdown:hover .dropdown__content {
+				display: flex;
+				align-items: flex;
+				flex-direction: column;
+				gap: 8px;
+				margin-top: 8px;
+			}
+
+			header nav a,
+			p {
+				font-size: 14px;
+			}
+
+			.selected {
+				font-weight: 600;
+				color: black;
+			}
+
+			header button {
+				background-color: var(--secondary);
+				padding: 20px 45px;
+				box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+				font-weight: 600;
+				color: white;
+				border-radius: 14px;
+			}
+
+			.header__search {
+				display: flex;
+				gap: 11px;
+				width: 105px;
+				margin-right: 50px;
+				position: relative;
+			}
+
+			.header__search::after {
+				position: absolute;
+				content: '';
+				background-color: black;
+				height: 1px;
+				width: 105px;
+				bottom: -20px;
+			}
+
+			.header__search input {
+				border: none;
+				color: #686868;
+				width: 80px;
+				background: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img src="logo.svg" alt="NetBook" />
+				<nav>
+					<a class="selected" href="#">Home</a>
+					<div class="dropdown">
+						<p class="dropdown__icon">
+							Community
+							<img src="dropdownicon.svg" alt="" />
+						</p>
+						<div class="dropdown__content">
+							<a href="">Lorem.</a><a href="">Quibusdam.</a
+							><a href="">Labore!</a><a href="">Perferendis!</a>
+						</div>
+					</div>
+					<a href="#">Blog</a>
+					<a href="#">Events</a>
+				</nav>
+				<div class="header__search">
+					<img src="searchicon.svg" alt="" />
+					<input type="text" placeholder="Search Here..." />
+				</div>
+				<button>Log in</button>
+			</header>
+		</div>
+	</body>
+</html>

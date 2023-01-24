@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Дз</title>
+	</head>
+	<body>
+		<form action="form.html">
+			<label for="firsname_id">First Name</label>
+			<input required name="firstname" id="firstname_id" type="text" />
+			<br />
+			<label for="lastname__id">Last Name</label>
+			<input required name="lastname" id="lastname__id" type="text" />
+			<br />
+			<label for="mystack">Your stack?</label>
+
+			<select name="mystack" id="stack">
+				<option selected disabled>--Position--</option>
+
+				<option value="reactjs">React JS</option>
+				<option value="vuejs">VueJS</option>
+				<option value="angular">Angular</option>
+			</select>
+			<br />
+			<label for="myfuture">Your future company</label>
+			<input list="myfuturecomp" id="myfuture" name="future" type="text" />
+			<datalist id="myfuturecomp">
+				<option value="Meta"></option>
+				<option value="Tesla"></option>
+				<option value="Microsoft"></option>
+			</datalist>
+
+			<br />
+			<label for="checkbox__id">You ready?</label>
+			<input name="isready" id="checkbox__id" type="checkbox" />
+			<br />
+			<label for="age">Your age?</label>
+			<input name="age" type="number" id="age" min="16" max="50" />
+			<br />
+			<button>Login</button>
+			<br />
+		</form>
+	</body>
+</html>

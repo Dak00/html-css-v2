@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+			body {
+				font-family: 'Inter', sans-serif;
+				background-color: #111111;
+				color: #f0f0f0;
+			}
+			.container {
+				max-width: 1140px;
+				margin: 0 auto;
+			}
+
+			header {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				justify-content: space-between;
+			}
+
+			.nav-logo {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+
+			.nav-list {
+				text-decoration: none;
+				color: #f0f0f0;
+				margin-left: 15px;
+			}
+			.nav-button {
+				color: #f0f0f0;
+				background-color: #111111;
+				border-color: #f0f0f0;
+				padding: 10px 20px;
+			}
+
+			main {
+				margin-top: 70px;
+				display: flex;
+
+				justify-content: space-between;
+			}
+			.main-about-text {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+
+				width: 500px;
+			}
+
+			.main-text-subtitle {
+				opacity: 20%;
+			}
+
+			.main-image {
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				width: 500px;
+				height: 400px;
+				background: rgb(131, 58, 180);
+				background: linear-gradient(
+					90deg,
+					rgba(131, 58, 180, 1) 0%,
+					rgba(253, 29, 29, 1) 50%,
+					rgba(252, 176, 69, 1) 100%
+				);
+				border-radius: 10%;
+			}
+			.main-image > img {
+				width: 250px;
+				height: 350px;
+			}
+			.main-email {
+				background-color: #525252;
+				width: fit-content;
+				padding: 5px;
+				border-radius: 10px;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+
+			.main-email > input {
+				width: fit-content;
+				border: 0;
+				background-color: #525252;
+			}
+			.main-email > svg {
+			}
+			.main-email > button {
+				background-color: #e3b748;
+				border: none;
+				border-radius: 25px;
+				padding: 10px 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="nav-logo">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="31"
+						height="31"
+						fill="none"
+					>
+						<path
+							fill="#E3B748"
+							d="m29.898 26.596-6.561-9.667a2.343 2.343 0 0 0-.617-.614l-.54-.384c-.618-.46-.618-1.304 0-1.765l.462-.306c.232-.154.463-.384.618-.614l6.715-9.515c.54-.844.618-1.918 0-2.685-.772-.998-2.161-1.228-3.164-.537L17.085 7.03a2.342 2.342 0 0 0-.618.613l-.386.538c-.463.613-1.312.613-1.775 0l-.309-.46a2.344 2.344 0 0 0-.617-.615L3.808.432c-.85-.537-1.93-.614-2.702 0C.103 1.2-.129 2.58.566 3.578l6.561 9.668c.155.23.386.46.618.614l.54.383c.618.46.618 1.304 0 1.765l-.463.307a2.343 2.343 0 0 0-.618.614l-6.792 9.59c-.618.921-.54 2.149.231 2.916.772.768 2.007.92 2.933.307l9.726-6.522c.232-.153.463-.383.618-.614l.386-.537c.463-.613 1.312-.613 1.775 0l.309.46c.154.23.386.461.617.614l9.726 6.753c.927.613 2.162.537 2.934-.23.771-.921.849-2.149.231-3.07Z"
+						/>
+					</svg>
+					<h1>IGSTUDIO</h1>
+				</div>
+
+				<nav>
+					<a class="nav-list" href="#">Lorem.</a>
+					<a class="nav-list" href="#">Laudantium.</a>
+					<a class="nav-list" href="#">Exercitationem.</a>
+				</nav>
+				<button class="nav-button">Contact Now</button>
+			</header>
+			<main>
+				<div class="main-about">
+					<div class="main-about-text">
+						<h1 class="main-text-title">
+							You don't have to <br />
+							Fight them Alone.
+						</h1>
+						<p class="main-text-subtitle">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+							rerum sed, assumenda sunt quis nobis deserunt quo aliquid ducimus
+							quaerat non eaque perferendis, laborum, iusto est? Sapiente
+							obcaecati repellendus magnam voluptatibus. Facere dolore molestias
+							ducimus dicta ipsum. Asperiores, cupiditate nostrum.
+						</p>
+					</div>
+					<div class="main-email">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="18"
+							fill="none"
+						>
+							<path
+								fill="#fff"
+								d="M1.139 3.875C.833 5.012.833 6.58.833 9c0 3.437 0 5.156.876 6.36.282.39.625.732 1.014 1.015 1.204.875 2.923.875 6.36.875h1.834c3.437 0 5.156 0 6.36-.875.39-.283.732-.625 1.014-1.014.876-1.205.876-2.924.876-6.361 0-2.428 0-3.998-.309-5.136l-1.927 1.928c-1.497 1.496-2.67 2.668-3.707 3.46-1.063.81-2.064 1.287-3.224 1.287-1.16 0-2.162-.476-3.224-1.287-1.038-.792-2.21-1.964-3.707-3.46L1.277 3.999l-.138-.124Z"
+							/>
+							<path
+								fill="#fff"
+								d="m1.75 2.583.1.083.373.335 1.781 1.781C5.546 6.324 6.654 7.43 7.61 8.16c.94.717 1.651 1.005 2.39 1.005.738 0 1.45-.288 2.39-1.005.956-.73 2.064-1.835 3.605-3.377l2.116-2.116.115-.114a3.923 3.923 0 0 0-.949-.927C16.073.75 14.354.75 10.917.75H9.083c-3.437 0-5.156 0-6.36.875-.39.283-.69.57-.973.958Z"
+							/>
+						</svg>
+						<input type="email" placeholder="Enter your email adress" />
+						<button>Let's Talk</button>
+					</div>
+				</div>
+				<div class="main-image">
+					<img
+						src="https://purepng.com/public/uploads/large/purepng.com-thinking-manthinking-manpersongentle-men-thinkingthinking-brain-1421526976458gpxqy.png"
+						alt=""
+					/>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

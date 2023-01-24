@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, li{
+	text-decoration: none;
+	list-style: none;
+	color: inherit;
+}
+body{
+    background: url('/five/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    padding: 0 calc(50% - 585px );
+}
+.header__prenav{
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+.header__prenav a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}.prenav__info {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.prenav__social {
+	display: flex;
+	align-items: center;
+	gap: 33px;
+}
