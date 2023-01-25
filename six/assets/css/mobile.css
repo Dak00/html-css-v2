@@ -1,0 +1,58 @@
+header {
+	padding: 50px 20px 22px 20px;
+}
+
+nav {
+	display: none;
+}
+
+.navbar__logo {
+	font-size: 20px;
+	line-height: 27px;
+	width: 92px;
+}
+
+.navbar__button {
+	display: none;
+}
+
+.navbar__burger {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.navbar__burger span {
+	width: 24px;
+	height: 2px;
+	background-color: var(--color-secondary);
+}
+
+section {
+	padding: 0 20px;
+	position: relative;
+	color: white;
+}
+
+.section__info {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	top: 0;
+	bottom: 0;
+}
+
+.info__heading {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 35px;
+	text-align: center;
+}
+
+section img {
+	width: 335px;
+	height: 643px;
+	background: rgba(0, 0, 0, 0.44);
+}
