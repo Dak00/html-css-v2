@@ -4,6 +4,68 @@
 :root{
     --text-color: #4543E8;
 }
+.info {
+	padding: 0 calc(50% - 640px);
+	display: flex;
+
+	background-color: #010032;
+	flex-direction: column;
+	background-image: url(../img/man.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.info__text {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info__text p:first-of-type {
+	margin: 95px 0 32px;
+	font-size: 72px;
+	line-height: 76px;
+}
+
+.info__text p {
+	font-size: 22px;
+	line-height: 34px;
+}
+
+.info__text button {
+	width: 30%;
+    border-radius: 50px;
+    padding: 3%;
+	display: flex;
+	align-items: center;
+    gap: 52px;
+}
+
+.info__awards {
+	margin: 100px 0 50px;
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.text__awards {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+    color: white;
+}
+
+.text__awards p:first-of-type {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.text__awards p:last-of-type {
+	opacity: 60%;
+	font-size: 15px;
+	line-height: 22px;
+}
 body{
     position: absolute;
     left: 0;
@@ -70,33 +132,7 @@ header{
 	height: 2px;
 	border-radius: 20px;
 }
-header img{
-    width: 11%;
-}
-.body-1{
-    background-color: #010032;
-    width: 100%;
-    height: 100%;
-    
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-.h1-b-1{
-    font-size: 396%;
-    font-weight: 100;
-    color: white;
-}
-.h3-b-1{
-        color: white;
-        font-weight: 100;
-}
-.btn-b-1{
-    width: 30%;
-    border-radius: 50px;
-    padding: 3%;
-}
+
 main{
     width: 100%;
     height: 100% ;
@@ -136,19 +172,16 @@ main{
 }
 .trust>h1{
     font-family: 'Epilogue';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 54px;
-position: absolute;
-    top: 122%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
 
 }
 .trust-c{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 15%;
 }
 .card>h1{
     font-family: 'Epilogue';
