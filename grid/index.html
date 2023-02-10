@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 70% 30%; */
+            /* grid-column-gap:1em;
+            grid-row-gap:1em; */
+
+            /* grid-gap:1em; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-gap:1em; */
+            /* grid-auto-rows: 150px; */
+            /* grid-auto-rows: minmax(100px, auto); */
+
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            justify-items: stretch;
+            align-items: stretch;
+        }
+        /* .included{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: 80px;
+        } */
+        .wrapper > div{
+            padding: 1em;
+            background-color: #eb7181;
+        }
+        .wrapper > div.light{
+            padding: 1em;
+            background-color: #ebd1b9;
+        }
+       .box1{
+        /* align-self: start;
+        justify-self: end; */
+        grid-column: 1/3;
+        grid-row: 1/3;
+       }
+       .box2{
+        /* align-self: end; */
+        grid-column:3;
+        grid-row:1/3;
+        }
+       .box3{
+        /* justify-self: center; */
+        grid-column:2/4;
+        grid-row:3;
+        }
+        .box4{
+            grid-column:1;
+            grid-row:0/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="box box1">1</div>
+      <div class="box box2 light">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4 light">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6 light">6</div>
+    </div>
+</body>
+</html>
